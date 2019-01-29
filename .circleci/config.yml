@@ -6,8 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install jest
-          command: npm i jest
+          name: Install npm packages
+          command: npm i
+      - run:
+          name: Run Tests
+          command: npm run test:unit
 
 workflows:
   version: 2
