@@ -5,3 +5,9 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
