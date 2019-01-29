@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Install npm packages
-          command: npm i jest
+          command: npm i
       - run:
           name: Run Tests
           command: npm run test:unit
